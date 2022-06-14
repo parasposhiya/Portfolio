@@ -3040,13 +3040,11 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .s-contact {
-    background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
+    background-color: cadetblue;
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 13.2rem;
     padding-bottom: 12rem;
-    color: rgba(255, 255, 255, 0.5);
     position: relative;
 }
 
@@ -3379,12 +3377,13 @@ footer a:hover, footer a:focus {
 }
 
 .footer-bottom {
-    margin-top: 7.2rem;
+    margin-top: 4.2rem;
     text-align: center;
 }
 
 .footer-bottom .copyright span {
     display: inline-block;
+    color: powderblue;
 }
 
 .footer-bottom .copyright span::after {
