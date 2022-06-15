@@ -1483,7 +1483,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .s-header.sticky {
     position: fixed;
     top: 0;
-    background-color: #000000 !important;
+    background-color: #797979 !important;
     opacity: 0;
     visibility: hidden;
     z-index: 600;
@@ -2356,6 +2356,18 @@ html.no-csstransitions .home-content__main {
     padding-top: 15rem;
     padding-bottom: 15.6rem;
     background-color: #f1f1f1;
+    position: relative;
+}
+
+/* ===================================================================
+ * # education - (_site-layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+ .s-education {
+    padding-top: 15rem;
+    padding-bottom: 9.6rem;
+    background-color: #FFFFFF;
     position: relative;
 }
 
