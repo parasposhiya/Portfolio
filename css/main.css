@@ -49,7 +49,6 @@ a:focus {
 }
 
 
-
 /* # typography & general theme styles - (_document-setup.scss) */
 
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
@@ -2349,12 +2348,13 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__title {
-    color: #FFFFFF;
+    color: black;
     font-family: "montserrat-semibold", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    margin: 0;
+    text-align: center;
+    margin-top: 10%;
 }
 
 .item-folio__cat {
@@ -2369,7 +2369,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__caption {
-    display: none;
+    text-align: justify;
 }
 
 .item-folio__project-link {
@@ -2936,6 +2936,7 @@ html.no-csstransitions .home-content__main {
     padding-top: 13.2rem;
     padding-bottom: 12rem;
     position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .s-contact .overlay {
@@ -3192,7 +3193,7 @@ html.no-csstransitions .home-content__main {
 footer {
     font-family: "montserrat-regular", sans-serif;
     font-size: 14px;
-    padding: 6.6rem 0 4.2rem;
+    padding: 4.6rem 0 2.2rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.2);
 }
@@ -3267,13 +3268,14 @@ footer a:hover, footer a:focus {
 }
 
 .footer-bottom {
-    margin-top: 4.2rem;
+    margin-top: 2.2rem;
     text-align: center;
 }
 
 .footer-bottom .copyright span {
     display: inline-block;
     color: powderblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .footer-bottom .copyright span::after {
