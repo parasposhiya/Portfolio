@@ -1,72 +1,11 @@
-/* =================================================================== 
- *
- *  Hola v1.0 Main Stylesheet
- *  10-02-2017
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # webfonts and iconfonts
- *  # base style overrides
- *      ## links
- *  # typography & general theme styles
- *      ## lists
- *      ## responsive video container
- *      ## floated image
- *      ## tables
- *      ## spacing
- *      ## pace.js styles - minimal
- *  # forms
- *      ## style placeholder text
- *      ## Change Autocomplete styles in Chrome
- *  # buttons
- *  # additional components
- *      ## alert box
- *      ## additional typo styles
- *      ## skillbars
- *  # common and reusable theme styles 
- *      ## section intro
- *      ## blog-list
- *  # header styles
- *      ## header logo
- *      ## mobile menu toggle
- *      ## navigation
- *  # home
- *      ## home content
- *      ## home social
- *      ## home animations
- *  # about
- *      ## timeline
- *  # works
- *      ## bricks/masonry
- *  # testimonials
- *  # blog
- *  # cta
- *  # stats
- *  # contact
- *  # footer
- *      ## go to top
- *  # blog styles
- *      ## blog page header
- *      ## blog content
- *      ## comments
- *
- * =================================================================== */
 
-
-/* ===================================================================
- * # webfonts and iconfonts - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- */
+/* # webfonts and iconfonts - (_document-setup.scss) */
 
 @import url("iconic/css/iconmonstr-iconic-font.min.css");
 @import url("fonts.css");
 
 
-
-/* ===================================================================
- * # base style overrides - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- */
+/* # base style overrides - (_document-setup.scss) */
 
 html {
     font-size: 10px;
@@ -93,9 +32,7 @@ body {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## links - (_document-setup.scss) 
- * ------------------------------------------------------------------- */
+/* ## links - (_document-setup.scss) */
 
 a {
     color: #862121;
@@ -113,10 +50,7 @@ a:focus {
 
 
 
-/* ===================================================================
- * # typography & general theme styles - (_document-setup.scss) 
- * 
- * ------------------------------------------------------------------- */
+/* # typography & general theme styles - (_document-setup.scss) */
 
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
     font-family: "montserrat-medium", sans-serif;
@@ -336,9 +270,7 @@ hr {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## Lists - (_document-setup.scss)  
- * ------------------------------------------------------------------- */
+/* ## Lists - (_document-setup.scss) */
 
 ol {
     list-style: decimal;
@@ -394,9 +326,7 @@ dd {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## responsive video container - (_document-setup)
- * ------------------------------------------------------------------- */
+/* ## responsive video container - (_document-setup) */
 
 .video-container {
     position: relative;
@@ -417,9 +347,7 @@ dd {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## floated image - (_document-setup)  
- * ------------------------------------------------------------------- */
+/* ## floated image - (_document-setup) */
 
 img.pull-right {
     margin: 1.5rem 0 0 3rem;
@@ -430,9 +358,7 @@ img.pull-left {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## tables - (_document-setup.scss)  
- * ------------------------------------------------------------------- */
+/* ## tables - (_document-setup.scss) */
 
 table {
     border-width: 0;
@@ -470,9 +396,7 @@ th:last-child, td:last-child {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## Spacing - (_document-setup.scss)  
- * ------------------------------------------------------------------- */
+/* ## Spacing - (_document-setup.scss) */
 
 button, .btn {
     margin-bottom: 1.2rem;
@@ -500,9 +424,7 @@ form,
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## pace.js styles - minimal  - (_document-setup.scss)
- * ------------------------------------------------------------------- */
+/* ## pace.js styles - minimal  - (_document-setup.scss) */
 
 .pace {
     -webkit-pointer-events: none;
@@ -531,11 +453,7 @@ form,
 }
 
 
-
-/* ===================================================================
- * preloader - (_preloader-2.scss)
- *
- * ------------------------------------------------------------------- */
+/* preloader - (_preloader-2.scss) */
 
 #preloader {
     position: fixed;
@@ -543,7 +461,7 @@ form,
     left: 0;
     right: 0;
     bottom: 0;
-    background: #0F1215;
+    background: #c9c9c9;
     z-index: 800;
     height: 100%;
     width: 100%;
@@ -562,7 +480,7 @@ form,
     margin-left: -30px;
     margin-top: -30px;
     padding: 0;
-    background-color: #862121;
+    background-color: #008C2C;
     border-radius: 100%;
     -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
     animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -592,10 +510,7 @@ form,
 
 
 
-/* ===================================================================
- * # forms - (_forms.scss)
- *
- * ------------------------------------------------------------------- */
+/* # forms - (_forms.scss) */
 
 fieldset {
     border: none;
@@ -724,9 +639,7 @@ label > input[type="checkbox"], label > input[type="radio"] {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## style placeholder text - (_forms.scss)
- * ------------------------------------------------------------------- */
+/* ## style placeholder text - (_forms.scss) */
 
 ::-webkit-input-placeholder {
     color: #6c6c6c;
@@ -751,9 +664,7 @@ label > input[type="checkbox"], label > input[type="radio"] {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## Change Autocomplete styles in Chrome - (_forms.scss)
- * ------------------------------------------------------------------- */
+/* ## Change Autocomplete styles in Chrome - (_forms.scss) */
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus input:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
     -webkit-text-fill-color: #cf3e3e;
@@ -762,10 +673,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 
 
-/* ===================================================================
- * # buttons - (_buttons.scss)
- *
- * ------------------------------------------------------------------- */
+/* # buttons - (_buttons.scss) */
 
 .btn, button, 
 input[type="submit"], 
@@ -807,8 +715,7 @@ input[type="button"]:focus {
 }
 
 
-/* button primary
- * ------------------------------------------------- */
+/* button primary */
 
 .btn.btn--primary, 
 button.btn--primary, 
@@ -835,8 +742,7 @@ input[type="button"].btn--primary:focus {
 }
 
 
-/* button modifiers
- * ------------------------------------------------- */
+/* button modifiers */
 
 .btn.full-width, button.full-width {
     width: 100%;
@@ -877,15 +783,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 
-/* =================================================================== 
- * # additional components - (_others.scss)
- *
- * ------------------------------------------------------------------- */
+/* # additional components - (_others.scss) */
 
 
-/* ------------------------------------------------------------------- 
- * ## alert box - (_alert-box.scss)
- * ------------------------------------------------------------------- */
+/* ## alert box - (_alert-box.scss) */
 
 .alert-box {
     padding: 2.1rem 4rem 2.1rem 3rem;
@@ -929,13 +830,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## additional typo styles - (_additional-typo.scss)
- * ------------------------------------------------------------------- */
+/* ## additional typo styles - (_additional-typo.scss) */
 
 
-/* drop cap 
- * ----------------------------------------------- */
+/* drop cap */
 
 .drop-cap:first-letter {
     float: left;
@@ -950,8 +848,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* line definition style 
- * ----------------------------------------------- */
+/* line definition style  */
 
 .lining dt, .lining dd {
     display: inline;
@@ -977,8 +874,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* dictionary definition style 
- * ----------------------------------------------- */
+/* dictionary definition style */
 
 .dictionary-style dt {
     display: inline;
@@ -1099,9 +995,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## skillbars - (_skillbars.scss)
- * ------------------------------------------------------------------- */
+/* ## skillbars - (_skillbars.scss) */
 
 .skill-bars {
     list-style: none;
@@ -1131,7 +1025,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .skill-bars li .progress {
     background: #000000;
-    background-image: linear-gradient(to right, #191A3F, #2d462c);
+    background-image: linear-gradient(to right, #6c6c6c, #191A3F, #2d462c);
     position: relative;
     height: 100%;
 }
@@ -1243,10 +1137,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 
-/* ===================================================================
- * # common and reusable theme styles  - (_common-styles.scss)
- *
- * ------------------------------------------------------------------- */
+/*  # common and reusable theme styles  - (_common-styles.scss) */
 
 .wide {
     max-width: 1400px;
@@ -1257,9 +1148,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## section intro - (_common-styles.scss)
- * ------------------------------------------------------------------- */
+/* ## section intro - (_common-styles.scss) */
 
 .section-intro {
     text-align: center;
@@ -1297,10 +1186,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * section-intro
- * ------------------------------------------------------------------- */
+/* responsive: section-intro */
 
 @media only screen and (max-width: 800px) {
     .section-intro h1 {
@@ -1330,9 +1216,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## blog-list - (_common-styles.scss)
- * ------------------------------------------------------------------- */
+/* ## blog-list - (_common-styles.scss) */
 
 .blog-list {
     margin-top: 6rem;
@@ -1421,10 +1305,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * blog-list
- * ------------------------------------------------------------------- */
+/* responsive: blog-list */
 
 @media only screen and (max-width: 1200px) {
     .blog-list article:nth-child(2n+1) {
@@ -1452,10 +1333,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 
-/* ===================================================================
- * # header styles - (_site-layout.scss)
- *
- * ------------------------------------------------------------------- */
+/* # header styles - (_site-layout.scss) */
 
 .s-header {
     width: 100%;
@@ -1503,9 +1381,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* -------------------------------------------------------------------
- * ## header logo - (_site-layout.css) 
- * ------------------------------------------------------------------- */
+/* ## header logo - (_site-layout.css) */
 
 .header-logo {
     display: inline-block;
@@ -1526,15 +1402,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 0;
     outline: 0;
     border: none;
-    width: 80px;
+    width: auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## mobile menu toggle - (_site-layout.css) 
- * ------------------------------------------------------------------- */
+/* ## mobile menu toggle - (_site-layout.css) */
 
 .header-menu-toggle {
     display: none;
@@ -2489,7 +2363,7 @@ html.no-csstransitions .home-content__main {
     font-size: 1.5rem;
     margin-bottom: 0;
     white-space: nowrap;
-    width: 350px;
+    width: 320px;
     overflow: hidden;
     text-overflow: ellipsis;
 }

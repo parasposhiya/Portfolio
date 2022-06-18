@@ -32,9 +32,9 @@
             // $('html, body').animate({ scrollTop: 0 }, 'normal');
 
             // will first fade out the loading animation 
-            $("#loader").fadeOut("slow", function() {
+            $("#loader").delay(50).fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
-                $("#preloader").delay(300).fadeOut("slow");
+                $("#preloader").delay(200).fadeOut("slow");
             }); 
             
             // for hero content animations 
@@ -142,61 +142,6 @@
             });
         });
     };
-
-
-    /* photoswipe
-     * ----------------------------------------------------- */
-    var ssPhotoswipe = function() {
-        var items = [],
-            $pswp = $('.pswp')[0],
-            $folioItems = $('.item-folio');
-
-            // get items
-            $folioItems.each( function(i) {
-
-                var $folio = $(this),
-                    $thumbLink =  $folio.find('.thumb-link'),
-                    $title = $folio.find('.item-folio__title'),
-                    $caption = $folio.find('.item-folio__caption'),
-                    $titleText = '<h4>' + $.trim($title.html()) + '</h4>',
-                    $captionText = $.trim($caption.html()),
-                    $href = $thumbLink.attr('href'),
-                    $size = $thumbLink.data('size').split('x'),
-                    $width  = $size[0],
-                    $height = $size[1];
-         
-                var item = {
-                    src  : $href,
-                    w    : $width,
-                    h    : $height
-                }
-
-                if ($caption.length > 0) {
-                    item.title = $.trim($titleText + $captionText);
-                }
-
-                items.push(item);
-            });
-
-            // bind click event
-            $folioItems.each(function(i) {
-
-                $(this).on('click', function(e) {
-                    e.preventDefault();
-                    var options = {
-                        index: i,
-                        showHideOpacity: true
-                    }
-
-                    // initialize PhotoSwipe
-                    var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
-                    lightBox.init();
-                });
-
-            });
-
-    };
-
 
     /* slick slider
      * ------------------------------------------------------ */
@@ -333,61 +278,6 @@
 
     };
 
-
-    /* Contact Form
-     * ------------------------------------------------------ */
-    var ssContactForm = function() {
-
-        /* local validation */
-	    $('#contactForm').validate({
-        
-            /* submit via ajax */
-            submitHandler: function(form) {
-    
-                var sLoader = $('.submit-loader');
-    
-                $.ajax({
-    
-                    type: "POST",
-                    url: "inc/sendEmail.php",
-                    data: $(form).serialize(),
-                    beforeSend: function() { 
-    
-                        sLoader.slideDown("slow");
-    
-                    },
-                    success: function(msg) {
-    
-                        // Message was sent
-                        if (msg == 'OK') {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').fadeOut();
-                            $('#contactForm').fadeOut();
-                            $('.message-success').fadeIn();
-                        }
-                        // There was an error
-                        else {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').html(msg);
-                            $('.message-warning').slideDown("slow");
-                        }
-    
-                    },
-                    error: function() {
-    
-                        sLoader.slideUp("slow"); 
-                        $('.message-warning').html("Something went wrong. Please try again.");
-                        $('.message-warning').slideDown("slow");
-    
-                    }
-    
-                });
-            }
-    
-        });
-    };
-
-
    /* Back to Top
     * ------------------------------------------------------ */
     var ssBackToTop = function() {
@@ -418,14 +308,12 @@
         ssMoveHeader();
         ssMobileMenu();
         ssMasonryFolio();
-        ssPhotoswipe();
         ssSlickSlider();
         ssWaypoints();
         ssStatCount();
         ssSmoothScroll();
         ssPlaceholder();
         ssAlertBoxes();
-        ssContactForm();
         ssBackToTop();
 
     })();
