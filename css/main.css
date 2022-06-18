@@ -2240,7 +2240,7 @@ html.no-csstransitions .home-content__main {
 .timeline__block {
     position: relative;
     padding-left: 8rem;
-    min-height: 28.8rem;
+    min-height: 18rem;
 }
 
 .timeline__bullet {
@@ -2488,6 +2488,10 @@ html.no-csstransitions .home-content__main {
     font-family: "montserrat-regular", sans-serif;
     font-size: 1.5rem;
     margin-bottom: 0;
+    white-space: nowrap;
+    width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .item-folio__caption {
